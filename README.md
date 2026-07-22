@@ -23,22 +23,25 @@
 
 ### 📖 Ver en línea
 
-> ⚠️ **Importante:** Si el PDF no se carga, haz clic en el botón de abajo para verlo en una nueva pestaña.
-
 <div align="center">
-  <a href="https://github.com/tu-usuario/tu-repositorio/blob/main/etapa_decidir_1_2_3_4.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/📄%20Haz%20clic%20aquí%20para%20ver%20el%20PDF-17375E?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
+  <a href="https://github.com/19791179-coder/tu-repositorio/blob/main/etapa_decidir_1_2_3_4.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/📄%20Haz%20clic%20para%20ver%20el%20PDF-17375E?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
   </a>
 </div>
 
 <br/>
 
-<embed src="https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf" width="100%" height="600px" type="application/pdf" />
+<!-- Vista previa del PDF -->
+<div align="center">
+  <object data="https://raw.githubusercontent.com/19791179-coder/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf" type="application/pdf" width="100%" height="600px">
+    <p>⚠️ Tu navegador no muestra PDFs. <a href="https://github.com/19791179-coder/tu-repositorio/blob/main/etapa_decidir_1_2_3_4.pdf">Haz clic aquí para verlo</a></p>
+  </object>
+</div>
 
 ### 📥 Descargar
 
-[![PDF](https://img.shields.io/badge/📄%20PDF-Download-red?style=for-the-badge&logo=adobeacrobatreader)](https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf)
-[![Word](https://img.shields.io/badge/📝%20Word-Download-2B579A?style=for-the-badge&logo=microsoftword)](https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.docx)
+[![PDF](https://img.shields.io/badge/📄%20PDF-Download-red?style=for-the-badge&logo=adobeacrobatreader)](https://raw.githubusercontent.com/19791179-coder/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf)
+[![Word](https://img.shields.io/badge/📝%20Word-Download-2B579A?style=for-the-badge&logo=microsoftword)](https://raw.githubusercontent.com/19791179-coder/tu-repositorio/main/etapa_decidir_1_2_3_4.docx)
 
 ---
 
