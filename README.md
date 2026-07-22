@@ -23,12 +23,22 @@
 
 ### 📖 Ver en línea
 
-<embed src="etapa_decidir_1_2_3_4.pdf" width="100%" height="600px" type="application/pdf" />
+> ⚠️ **Importante:** Si el PDF no se carga, haz clic en el botón de abajo para verlo en una nueva pestaña.
+
+<div align="center">
+  <a href="https://github.com/tu-usuario/tu-repositorio/blob/main/etapa_decidir_1_2_3_4.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/📄%20Haz%20clic%20aquí%20para%20ver%20el%20PDF-17375E?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
+  </a>
+</div>
+
+<br/>
+
+<embed src="https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf" width="100%" height="600px" type="application/pdf" />
 
 ### 📥 Descargar
 
-[![PDF](https://img.shields.io/badge/📄%20PDF-Download-red?style=for-the-badge&logo=adobeacrobatreader)](etapa_decidir_1_2_3_4.pdf)
-[![Word](https://img.shields.io/badge/📝%20Word-Download-2B579A?style=for-the-badge&logo=microsoftword)](etapa_decidir_1_2_3_4.docx)
+[![PDF](https://img.shields.io/badge/📄%20PDF-Download-red?style=for-the-badge&logo=adobeacrobatreader)](https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.pdf)
+[![Word](https://img.shields.io/badge/📝%20Word-Download-2B579A?style=for-the-badge&logo=microsoftword)](https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/etapa_decidir_1_2_3_4.docx)
 
 ---
 
@@ -52,18 +62,6 @@
 | Procesador | Microsoft Word | ✅ Principal |
 | Video | OBS Studio | ✅ Principal |
 | Diseño | GIMP | ✅ Principal |
-
----
-
-## 📖 Glosario (Usuario Final)
-
-| Término | Significado |
-|---------|-------------|
-| API | "El mesero del sistema" |
-| Query | "Pregunta al sistema" |
-| Rollback | "Botón deshacer" |
-| Trigger | "Regla automática" |
-| Deploy | "Abrir tienda renovada" |
 
 ---
 
