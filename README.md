@@ -260,6 +260,10 @@
       font-family: 'IBM Plex Mono', monospace;
       font-size: 13px;
       color: var(--ink-2);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 200px;
     }
     .doc-toolbar-title .dot {
       width: 7px;
@@ -318,16 +322,48 @@
     }
     .doc-frame-wrap iframe {
       width: 100%;
-      height: 460px;
+      height: 380px;
       border: 1px solid #C7D3E2;
       background: #fff;
       border-radius: var(--radius);
       display: block;
     }
 
-    /* full-width card */
-    .doc-card-wide {
-      grid-column: 1 / -1;
+    .doc-placeholder {
+      height: 380px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid #C7D3E2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      color: #123163;
+      gap: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .doc-placeholder .icon {
+      font-size: 38px;
+    }
+    .doc-placeholder .label {
+      font-size: 14px;
+      background: #F3F6FA;
+      padding: 6px 20px;
+      border-radius: 40px;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .doc-placeholder .hint {
+      font-size: 13px;
+      color: #7C93B3;
+    }
+    .doc-placeholder .hint a {
+      color: var(--ink);
+      text-decoration: underline;
     }
 
     /* ---------- DELIVERABLES ---------- */
@@ -446,8 +482,9 @@
       .stamp {
         width: 100%;
       }
-      .doc-frame-wrap iframe {
-        height: 340px;
+      .doc-frame-wrap iframe,
+      .doc-placeholder {
+        height: 280px;
       }
       .foot-grid {
         flex-direction: column;
@@ -488,7 +525,7 @@
       </div>
       <div class="hero-foot">
         <span><b>5</b> entregables completados</span>
-        <span><b>PDF + Word + PPT</b> disponibles abajo</span>
+        <span><b>PDF + Word + PPT + MD</b> disponibles abajo</span>
         <span><b>INO</b> · Bachillerato Técnico en Desarrollo de Software</span>
       </div>
     </div>
@@ -505,7 +542,7 @@
 
       <div class="doc-grid">
 
-        <!-- PDF -->
+        <!-- 1. PDF -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
@@ -523,7 +560,25 @@
           </div>
         </div>
 
-        <!-- PowerPoint -->
+        <!-- 2. Manual de Usuario (el que faltaba) -->
+        <div class="doc-card">
+          <div class="doc-toolbar">
+            <div class="doc-toolbar-title">
+              <span class="dot" style="background:#5FD3A3;"></span>
+              Manual_Usuario_Sistema_Asisten...
+            </div>
+            <div class="doc-actions">
+              <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Asistencias.pdf" target="_blank">Abrir</a>
+              <a class="btn btn-primary" href="./Manual_Usuario_Sistema_Asistencias.pdf" download>PDF</a>
+              <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Asistencias.docx" download>Word</a>
+            </div>
+          </div>
+          <div class="doc-frame-wrap">
+            <iframe src="./Manual_Usuario_Sistema_Asistencias.pdf" title="Manual de Usuario"></iframe>
+          </div>
+        </div>
+
+        <!-- 3. PowerPoint -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
@@ -535,17 +590,17 @@
               <a class="btn btn-primary" href="./presentacion_para_mañana.pptx" download>PPTX</a>
             </div>
           </div>
-          <div class="doc-frame-wrap" style="background:#E2D9CD;">
-            <div style="height:460px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; color:#123163; gap:12px;">
-              <span style="font-size:32px;">📊</span>
-              <span style="font-size:14px; background:#F3F6FA; padding:6px 20px; border-radius:40px;">presentacion_para_mañana.pptx</span>
-              <span style="font-size:13px; color:#7C93B3;">Vista previa no disponible · <a href="./presentacion_para_mañana.pptx" download style="color:var(--ink); text-decoration:underline;">Descargar</a></span>
+          <div class="doc-frame-wrap">
+            <div class="doc-placeholder">
+              <span class="icon">📊</span>
+              <span class="label">presentacion_para_mañana.pptx</span>
+              <span class="hint">Vista previa no disponible · <a href="./presentacion_para_mañana.pptx" download>Descargar</a></span>
             </div>
           </div>
         </div>
 
-        <!-- README (full width) -->
-        <div class="doc-card doc-card-wide">
+        <!-- 4. README -->
+        <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
               <span class="dot" style="background:#63D2FF;"></span>
@@ -553,11 +608,11 @@
             </div>
             <div class="doc-actions">
               <a class="btn btn-ghost" href="./README.md" target="_blank">Ver raw</a>
-              <a class="btn btn-primary" href="./README.md" download>Descargar .md</a>
+              <a class="btn btn-primary" href="./README.md" download>Descargar</a>
             </div>
           </div>
-          <div class="doc-frame-wrap" style="background:#E4EAF1;">
-            <div style="height:220px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; padding:24px 28px; overflow-y:auto; font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.6; color:#1F2A3E;">
+          <div class="doc-frame-wrap">
+            <div style="height:380px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; padding:24px 28px; overflow-y:auto; font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.6; color:#1F2A3E;">
               <div style="display:flex; gap:12px; align-items:center; margin-bottom:12px;">
                 <span style="background:#0B2545; color:#fff; padding:2px 12px; border-radius:40px; font-size:11px;">README</span>
                 <span style="color:#7C93B3;"># Manual de usuario · Sistema de Asistencias</span>
@@ -565,6 +620,9 @@
               <p style="margin:0 0 8px 0;"><strong>Propósito:</strong> Documentar el flujo de registro de asistencia, generación de reportes y administración de usuarios.</p>
               <p style="margin:0 0 8px 0;"><strong>Estructura:</strong> Introducción · Requisitos · Instalación · Módulos · Soporte</p>
               <p style="margin:0; color:#2A7FB8;">📌 Última actualización: 24 de agosto de 2026</p>
+              <hr style="border:1px dashed #D6DEE8; margin:16px 0;" />
+              <p style="margin:0; color:#7C93B3; font-size:12px;"># Documentación técnica del proyecto INO</p>
+              <p style="margin:6px 0 0 0; color:#7C93B3; font-size:12px;">Autores: Equipo de desarrollo · Revisión: Prof. Hernández</p>
             </div>
           </div>
         </div>
@@ -606,6 +664,7 @@
         <div class="tool-chip"><span class="sw"></span>GIMP</div>
         <div class="tool-chip"><span class="sw" style="background:#63D2FF;"></span>Git</div>
         <div class="tool-chip"><span class="sw" style="background:#FFB454;"></span>PowerPoint</div>
+        <div class="tool-chip"><span class="sw" style="background:#5FD3A3;"></span>Draw.io</div>
       </div>
     </div>
   </section>
