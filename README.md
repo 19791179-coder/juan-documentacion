@@ -55,18 +55,6 @@
       letter-spacing: -0.01em;
     }
 
-    .mono {
-      font-family: 'IBM Plex Mono', monospace;
-    }
-
-    .eyebrow {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 12px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
     .wrap {
       max-width: 1100px;
       margin: 0 auto;
@@ -263,7 +251,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      max-width: 200px;
+      max-width: 220px;
     }
     .doc-toolbar-title .dot {
       width: 7px;
@@ -327,43 +315,6 @@
       background: #fff;
       border-radius: var(--radius);
       display: block;
-    }
-
-    .doc-placeholder {
-      height: 380px;
-      background: #fff;
-      border-radius: var(--radius);
-      border: 1px solid #C7D3E2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'IBM Plex Mono', monospace;
-      color: #123163;
-      gap: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-    .doc-placeholder .icon {
-      font-size: 38px;
-    }
-    .doc-placeholder .label {
-      font-size: 14px;
-      background: #F3F6FA;
-      padding: 6px 20px;
-      border-radius: 40px;
-      max-width: 90%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .doc-placeholder .hint {
-      font-size: 13px;
-      color: #7C93B3;
-    }
-    .doc-placeholder .hint a {
-      color: var(--ink);
-      text-decoration: underline;
     }
 
     /* ---------- DELIVERABLES ---------- */
@@ -482,8 +433,7 @@
       .stamp {
         width: 100%;
       }
-      .doc-frame-wrap iframe,
-      .doc-placeholder {
+      .doc-frame-wrap iframe {
         height: 280px;
       }
       .foot-grid {
@@ -542,7 +492,7 @@
 
       <div class="doc-grid">
 
-        <!-- 1. PDF -->
+        <!-- 1. PDF etapa_decidir -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
@@ -560,12 +510,12 @@
           </div>
         </div>
 
-        <!-- 2. Manual de Usuario (el que faltaba) -->
+        <!-- 2. Manual de Usuario (AHORA CON IFRAME COMO LOS DEMÁS) -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
               <span class="dot" style="background:#5FD3A3;"></span>
-              Manual_Usuario_Sistema_Asisten...
+              Manual_Usuario_Sistema_Asistencias.pdf
             </div>
             <div class="doc-actions">
               <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Asistencias.pdf" target="_blank">Abrir</a>
@@ -591,10 +541,11 @@
             </div>
           </div>
           <div class="doc-frame-wrap">
-            <div class="doc-placeholder">
-              <span class="icon">📊</span>
-              <span class="label">presentacion_para_mañana.pptx</span>
-              <span class="hint">Vista previa no disponible · <a href="./presentacion_para_mañana.pptx" download>Descargar</a></span>
+            <!-- Placeholder para PPT (no se puede incrustar nativamente) -->
+            <div style="height:380px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; color:#123163; gap:12px;">
+              <span style="font-size:38px;">📊</span>
+              <span style="font-size:14px; background:#F3F6FA; padding:6px 20px; border-radius:40px;">presentacion_para_mañana.pptx</span>
+              <span style="font-size:13px; color:#7C93B3;">Vista previa no disponible · <a href="./presentacion_para_mañana.pptx" download style="color:var(--ink); text-decoration:underline;">Descargar</a></span>
             </div>
           </div>
         </div>
