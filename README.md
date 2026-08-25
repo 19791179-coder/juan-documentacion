@@ -547,7 +547,7 @@
           </div>
         </div>
 
-        <!-- 2. Manual de Usuario (con el nombre CORRECTO de tu repositorio) -->
+        <!-- 2. Manual de Usuario -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
@@ -568,7 +568,7 @@
           </div>
         </div>
 
-        <!-- 3. PowerPoint (con espacio en el nombre) -->
+        <!-- 3. PowerPoint -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
