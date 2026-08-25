@@ -317,6 +317,43 @@
       display: block;
     }
 
+    .doc-placeholder {
+      height: 380px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid #C7D3E2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      color: #123163;
+      gap: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .doc-placeholder .icon {
+      font-size: 42px;
+    }
+    .doc-placeholder .label {
+      font-size: 14px;
+      background: #F3F6FA;
+      padding: 6px 20px;
+      border-radius: 40px;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .doc-placeholder .hint {
+      font-size: 13px;
+      color: #7C93B3;
+    }
+    .doc-placeholder .hint a {
+      color: var(--ink);
+      text-decoration: underline;
+    }
+
     /* ---------- DELIVERABLES ---------- */
     .deliverables {
       display: flex;
@@ -433,7 +470,8 @@
       .stamp {
         width: 100%;
       }
-      .doc-frame-wrap iframe {
+      .doc-frame-wrap iframe,
+      .doc-placeholder {
         height: 280px;
       }
       .foot-grid {
@@ -502,7 +540,6 @@
             <div class="doc-actions">
               <a class="btn btn-ghost" href="./etapa_decidir_1_2_3_4.pdf" target="_blank">Abrir</a>
               <a class="btn btn-primary" href="./etapa_decidir_1_2_3_4.pdf" download>PDF</a>
-              <a class="btn btn-ghost" href="./etapa_decidir_1_2_3_4.docx" download>Word</a>
             </div>
           </div>
           <div class="doc-frame-wrap">
@@ -510,53 +547,44 @@
           </div>
         </div>
 
-        <!-- 2. Manual de Usuario PROFESIONAL verificado (Word) -->
+        <!-- 2. Manual de Usuario (con el nombre CORRECTO de tu repositorio) -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
               <span class="dot" style="background:#5FD3A3;"></span>
-              Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.docx
+              Manual_Usuario_Sistema_Aristencia_PROFESIONAL_verificado.docx
             </div>
             <div class="doc-actions">
-              <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.docx" target="_blank">Abrir</a>
-              <a class="btn btn-primary" href="./Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.docx" download>Word</a>
-              <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.pdf" download>PDF</a>
+              <a class="btn btn-ghost" href="./Manual_Usuario_Sistema_Aristencia_PROFESIONAL_verificado.docx" target="_blank">Abrir</a>
+              <a class="btn btn-primary" href="./Manual_Usuario_Sistema_Aristencia_PROFESIONAL_verificado.docx" download>Word</a>
             </div>
           </div>
           <div class="doc-frame-wrap">
-            <!-- Vista previa para Word (no se puede incrustar directamente) -->
-            <div style="height:380px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; color:#123163; gap:12px; padding:20px; text-align:center;">
-              <span style="font-size:42px;">📄</span>
-              <span style="font-size:14px; background:#F3F6FA; padding:6px 20px; border-radius:40px; max-width:90%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
-                Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.docx
-              </span>
-              <span style="font-size:13px; color:#7C93B3;">
-                Vista previa no disponible · 
-                <a href="./Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.docx" download style="color:var(--ink); text-decoration:underline;">Descargar Word</a>
-                &nbsp;·&nbsp;
-                <a href="./Manual_Usuario_Sistema_Asistencia_PROFESIONAL_verificado.pdf" download style="color:var(--ink); text-decoration:underline;">Descargar PDF</a>
-              </span>
+            <div class="doc-placeholder">
+              <span class="icon">📄</span>
+              <span class="label">Manual_Usuario_Sistema_Aristencia_PROFESIONAL_verificado.docx</span>
+              <span class="hint">Vista previa no disponible · <a href="./Manual_Usuario_Sistema_Aristencia_PROFESIONAL_verificado.docx" download>Descargar Word</a></span>
             </div>
           </div>
         </div>
 
-        <!-- 3. PowerPoint -->
+        <!-- 3. PowerPoint (con espacio en el nombre) -->
         <div class="doc-card">
           <div class="doc-toolbar">
             <div class="doc-toolbar-title">
               <span class="dot" style="background:#FFB454;"></span>
-              presentacion_para_mañana.pptx
+              presentacion para mañana.pptx
             </div>
             <div class="doc-actions">
-              <a class="btn btn-ghost" href="./presentacion_para_mañana.pptx" target="_blank">Abrir</a>
-              <a class="btn btn-primary" href="./presentacion_para_mañana.pptx" download>PPTX</a>
+              <a class="btn btn-ghost" href="./presentacion para mañana.pptx" target="_blank">Abrir</a>
+              <a class="btn btn-primary" href="./presentacion para mañana.pptx" download>PPTX</a>
             </div>
           </div>
           <div class="doc-frame-wrap">
-            <div style="height:380px; background:#fff; border-radius:2px; border:1px solid #C7D3E2; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; color:#123163; gap:12px;">
-              <span style="font-size:42px;">📊</span>
-              <span style="font-size:14px; background:#F3F6FA; padding:6px 20px; border-radius:40px;">presentacion_para_mañana.pptx</span>
-              <span style="font-size:13px; color:#7C93B3;">Vista previa no disponible · <a href="./presentacion_para_mañana.pptx" download style="color:var(--ink); text-decoration:underline;">Descargar</a></span>
+            <div class="doc-placeholder">
+              <span class="icon">📊</span>
+              <span class="label">presentacion para mañana.pptx</span>
+              <span class="hint">Vista previa no disponible · <a href="./presentacion para mañana.pptx" download>Descargar</a></span>
             </div>
           </div>
         </div>
